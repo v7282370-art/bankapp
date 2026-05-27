@@ -4,12 +4,13 @@ import com.bankapp.user.entity.UserStatus;
 import lombok.Builder;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
 @Builder
-public class UserResponse {
+public class UserResponse implements Serializable {
 
     private UUID id;
     private String username;
